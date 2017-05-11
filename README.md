@@ -1,6 +1,6 @@
 # Create a new project based on an existing git repository
 
-Clone this repo into new project folder (e.g., `my-proj`).
+We'll use this repo as an example. Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
 git clone  https://github.com/vicen007/git-cheat-sheet.git  my-proj
 cd my-proj
