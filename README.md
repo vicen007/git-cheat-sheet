@@ -2,7 +2,7 @@
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
-git clone  https://github.com/<GIT REPO HERE>.git  my-proj
+git clone  https://github.com/<my-org>/my-proj.git  my-proj
 cd my-proj
 ```
 
