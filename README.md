@@ -1,4 +1,4 @@
-# Create a new project based on the QuickStart
+# Create a new project based on an existing git repository
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
