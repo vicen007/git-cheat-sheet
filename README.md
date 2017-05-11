@@ -160,7 +160,9 @@ Note that with recent git versions, this will command not create a local branch 
 
 # Developing on an NMCI Box
 If developing on an NMCI box and you're on the NMCI VPN, you'll need to change your proxy settings.  
-If using command prompt, everytime you open a new command prompt window copy and paste the following to use the west coast proxy settings:
+
+### If using the command prompt (Windows)
+If using command prompt, every time you open a new command prompt window copy and paste the following to use the west coast proxy settings:
 ```bash
 npm config set proxy http://nmciproxyb1:8080
 npm config set https-proxy http://nmciproxyb1secure:8443
@@ -170,4 +172,33 @@ npm config set PROXY http://nmciproxyb1:8080
 npm config set HTTPS-PROXY http://nmciproxyb1secure:8443
 
 SET PATH=%PATH%;%APPDATA%\npm;C:\Users\Administrator\AppData\Roaming\npm 
+```
+if you want to use the east coast proxy settings:
+```bash
+npm config set proxy http://nmciproxyb1.nrfk.nadsusea.nads.navy.mil:8080
+npm config set https-proxy http://nmciproxyb1secure.nrfk.nadsusea.nads.navy.mil:8443
+SET http_proxy=http://nmciproxyb1.nrfk.nadsusea.nads.navy.mil:8080
+SET https_proxy=http://nmciproxyb1secure.nrfk.nadsusea.nads.navy.mil:8443
+npm config set PROXY http://nmciproxyb1.nrfk.nadsusea.nads.navy.mil:8080
+npm config set HTTPS-PROXY http://nmciproxyb1secure.nrfk.nadsusea.nads.navy.mil:8443
+
+SET PATH=%PATH%;%APPDATA%\npm;C:\Users\Administrator\AppData\Roaming\npm ```
+### If using powershell (Windows)
+If using powershell, every time you open a new powershell window copy and paste the following to use the west coast proxy settings:
+```bash
+npm config set proxy http://nmciproxyb1:8080
+npm config set https-proxy http://nmciproxyb1secure:8443
+$Env:http_proxy = "nmciproxyb1:8080"
+$Env:https_proxy = "nmciproxyb1secure:8443"
+npm config set PROXY http://nmciproxyb1:8080
+npm config set HTTPS-PROXY http://nmciproxyb1secure:8443
+```
+if you want to use the east coast proxy settings:
+```bash
+npm config set proxy http://nmciproxyb1.nrfk.nadsusea.nads.navy.mil:8080
+npm config set https-proxy http://nmciproxyb1secure.nrfk.nadsusea.nads.navy.mil:8443
+$Env:http_proxy = "nmciproxyb1.nrfk.nadsusea.nads.navy.mil:8080"
+$Env:https_proxy = "nmciproxyb1secure.nrfk.nadsusea.nads.navy.mil:8443"
+npm config set PROXY http://nmciproxyb1.nrfk.nadsusea.nads.navy.mil:8080
+npm config set HTTPS-PROXY http://nmciproxyb1secure.nrfk.nadsusea.nads.navy.mil:8443
 ```
