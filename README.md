@@ -6,7 +6,7 @@ git clone  https://github.com/<my-org>/my-proj.git  my-proj
 cd my-proj
 ```
 
-We have no intention of updating the source on `angular/quickstart`.
+If you have no intention of updating the source on `<my-org>/my-proj.git`.
 Discard everything "git-like" by deleting the `.git` folder.
 ```bash
 rm -rf .git  # non-Windows
