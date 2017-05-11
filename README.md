@@ -158,3 +158,16 @@ git checkout daves_branch
 
 Note that with recent git versions, this will command not create a local branch and will put you in a 'detached HEAD' state. If you want a local branch, use the `--track option`. Full details here: [Git Branching Remote Branches - Tracking Branches](http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches)
 
+# Developing on an NMCI Box
+If developing on an NMCI box and you're on the NMCI VPN, you'll need to change your proxy settings.  
+If using command prompt, everytime you open a new command prompt window copy and paste the following to use the west coast proxy settings:
+```bash
+npm config set proxy http://nmciproxyb1:8080
+npm config set https-proxy http://nmciproxyb1secure:8443
+SET http_proxy=http://nmciproxyb1:8080
+SET https_proxy=http://nmciproxyb1secure:8443
+npm config set PROXY http://nmciproxyb1:8080
+npm config set HTTPS-PROXY http://nmciproxyb1secure:8443
+
+SET PATH=%PATH%;%APPDATA%\npm;C:\Users\Administrator\AppData\Roaming\npm 
+```
