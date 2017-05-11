@@ -3,7 +3,7 @@
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
 git clone  https://github.com/vicen007/git-cheat-sheet.git  git-cheat-sheet
-cd my-proj
+cd git-cheat-sheet
 ```
 
 If you have no intention of updating the source on `vicen007/git-cheat-sheet.git`.
