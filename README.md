@@ -224,8 +224,10 @@ npm config rm PROXY
 npm config rm HTTPS-PROXY
 npm config rm proxy
 npm config rm https-proxy
-npm config delete http-proxy
+npm config delete proxy
 npm config delete https-proxy
+npm config delete PROXY
+npm config delete HTTPS-PROXY
 set http_proxy=null
 set https_proxy=null
 ```
