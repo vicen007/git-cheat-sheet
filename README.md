@@ -54,16 +54,6 @@ Shut it down manually with Ctrl-C.
 
 You're ready to write your application.
 
-# Download objects and refs from another repository
-Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated.
-```bash
-git fetch
-```
-To do a fetch that "prunes" all local branches that have been deleted on remote:
-```bash
-git fetch -p
-```
-
 # Branching the repo
 
 Using cmd/terminal, navigate to the project root folder and enter:
@@ -96,6 +86,15 @@ git push -u origin <branch name>
 
 ```bash
 git branch
+```
+# Download objects and refs from another repository
+Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated.
+```bash
+git fetch
+```
+To do a fetch that "prunes" all local branches that have been deleted on remote:
+```bash
+git fetch -p
 ```
 
 # Show remote repo name and URL
