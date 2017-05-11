@@ -2,7 +2,7 @@
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
-git clone  https://github.com/vicen007/git-cheat-sheet.git  my-proj
+git clone  https://github.com/vicen007/git-cheat-sheet  my-proj
 cd my-proj
 ```
 
