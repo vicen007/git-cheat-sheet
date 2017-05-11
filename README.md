@@ -2,7 +2,7 @@
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
-git clone  https://github.com/angular/quickstart  my-proj
+git clone  https://github.com/<GIT REPO HERE>.git  my-proj
 cd my-proj
 ```
 
@@ -101,12 +101,23 @@ git reset --hard origin/master
 ```
 says: throw away all my staged and unstaged changes, forget everything on my current local branch and make it exactly the same as origin/master
 
-# Merging and removing finished branches
+# Merging a remote master into a local branch that is behind the remote master
 
-Switch to branch you want to merge into then type:
+You're working on a local branch called myLocalBranch. The remote master branch has been updated after myLocalBranch was created. To update myLocalBranch with the commits made to the master branch do the following
+
+
+### Switch to myLocalBranch
 
 ```bash
-git merge <branch name>
+git checkout myLocalBranch
+```
+### Then merge
+```bash
+git merge origin/master
+```
+### If you want to push your branch to remote
+```bash
+git push origin myLocalBranch
 ```
 
 # Delete Branch
