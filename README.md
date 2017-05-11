@@ -217,7 +217,7 @@ npm config set PROXY http://nmciproxyb1.nrfk.nadsusea.nads.navy.mil:8080
 npm config set HTTPS-PROXY http://nmciproxyb1secure.nrfk.nadsusea.nads.navy.mil:8443
 ```
 ## NMCI Box NOT behind VPN
-You will have to delete your proxy settings if you are not behind the NMCI VPN on your NMCI box. Do all of the following just to be 100% certain:
+If you've used the proxy settings above, but you want to develop OFF of the VPN on the same box, you'll have to delete any persistent proxy settings that were set. To do so, copy and paste the following into your command prompt
 ```bash
 npm config rm PROXY
 npm config rm HTTPS-PROXY
