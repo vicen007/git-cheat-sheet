@@ -85,7 +85,7 @@ to push branch, first make sure you've checked out the right branch
 git checkout <branch name>
 ```
     
-push branch to remote repository
+If the local branch does not currently track a remote branch, do this
     
 ```bash
 git push -u origin <branch name>
