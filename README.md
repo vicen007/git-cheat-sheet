@@ -54,6 +54,16 @@ Shut it down manually with Ctrl-C.
 
 You're ready to write your application.
 
+# Download objects and refs from another repository
+Fetch branches and/or tags (collectively, "refs") from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated.
+```bash
+git fetch
+```
+To do a fetch that "prunes" all local branches that have been deleted on remote:
+```bash
+git fetch -p
+```
+
 # Branching the repo
 
 Using cmd/terminal, navigate to the project root folder and enter:
@@ -94,7 +104,8 @@ git branch
 git remote -v
 ```
 
-# Replace all changes in a messed up local branch to the origin/master
+# Discard all changes in a local branch and reset to origin/master
+Switch to the local branch you want to reset then
 
 ```bash
 git reset --hard origin/master
