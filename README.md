@@ -13,7 +13,7 @@ rm -rf .git  # non-Windows
 rd .git /S/Q # windows
 ```
 
-## Create a new git repo
+### Create a new git repo
 You could [start writing code](#start-development) now and throw it all away when you're done.
 If you'd rather preserve your work under source control, consider taking the following steps.
 
