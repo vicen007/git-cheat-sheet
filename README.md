@@ -62,7 +62,7 @@ Using cmd/terminal, navigate to the project root folder and enter:
 git checkout -b <branch name>
 ```
 
-shorhand for
+shorthand for
     
 ```bash
 git branch <branch name>
