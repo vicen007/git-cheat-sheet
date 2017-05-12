@@ -125,10 +125,6 @@ git checkout myLocalBranch
 ```bash
 git merge origin/master
 ```
-### If you want to push your branch to remote
-```bash
-git push origin myLocalBranch
-```
 
 # Delete Branch
 
