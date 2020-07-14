@@ -1,3 +1,7 @@
+# SharePoint
+## Inherit master page on sub sites
+Site Settings -> Master Page -> Change inherit to the main master page
+
 1. Add the store to constructor in component.ts
 2. Import behavior subject to componenet.ts file
 3. public questionData$: Observable<CommonQuestion[]>;
