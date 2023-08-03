@@ -139,6 +139,20 @@ If no merge has been done, use -D
 ```bash
 git branch -D <branch name>
 ```
+
+# To determine which files do not exist in a repository between branches
+First, make sure you are in the branch you want to compare from (let's call it branchA), and then run the following command to list the files that exist in branchA but not in the current branch (let's call it branchB)
+```bash
+ git diff --name-only --diff-filter=D branchA..branchB
+ ```
+This will show a list of files that are in branchA but are deleted or do not exist in branchB.
+
+If you want to find the files that exist in branchB but not in branchA, you can reverse the branches in the command:
+```bash
+git diff --name-only --diff-filter=D branchB..branchA
+```
+This will list the files that are in branchB but do not exist in branchA.
+
 # Create local branch that tracks a remote branch
 You need to create a local branch that tracks a remote branch. The following command will create a local branch named `daves_branch`, tracking the remote branch `origin/daves_branch`. When you push your changes the remote branch will be updated.
 
